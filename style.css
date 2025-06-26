@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.clock-container {
+  text-align: center;
+}
+
+#clock {
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+#clock {
+  font-size: 4rem;
+  letter-spacing: 3px;
+  animation: glow 1s ease-in-out infinite alternate;
+  color: blue;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px blue, 0 0 20px blue;
+  }
+  to {
+    text-shadow: 0 0 20px blue, 0 0 40px blue;
+  }
+}
+
+#date {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #ccc;
+}
